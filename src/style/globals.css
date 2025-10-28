@@ -1,10 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-:root {
-    --my-color: #fff;
-    /* or any other variables/style */
-}
+
 [data-theme='winter'] {
     --color-base-100: oklch(100% 0 0);
     --color-base-200: oklch(97.466% 0.011 259.822);
@@ -67,9 +64,31 @@
 }
 
 body {
-    @apply bg-base-100 text-base-content;
+    @apply bg-base-200  text-base-content  ;
 }
 
 .mediaPadding {
-    @apply w-full bg-base-100 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64
+    @apply w-full   px-4 md:px-8 lg:px-16 xl:px-32;
+}
+
+.card{
+    @apply bg-base-100 rounded-lg p-4 border border-gray-400/20;
+    @apply dark:border-gray-400/10;
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.scrollbar-hide {
+    scrollbar-width: none;  /* Firefox */
+}
+
+.title {
+    @apply text-lg font-black;
+}
+
+.next{  
+  @apply  text-sm text-base-content  hover:text-primary transition cursor-pointer font-medium;
 }
