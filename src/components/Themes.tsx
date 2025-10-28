@@ -8,14 +8,33 @@ const Themes: FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
+    // 初始化 theme-change
     themeChange(false);
-    // 检查当前主题
-    const currentTheme = localStorage.getItem("theme");
-    setIsDarkMode(currentTheme === "winter" || currentTheme === "dracula");
+    
+    // 获取当前主题，默认为 winter
+    const currentTheme = localStorage.getItem("theme") || "winter";
+    
+    // 确保主题被正确应用到文档
+    if (!document.documentElement.getAttribute("data-theme")) {
+      document.documentElement.setAttribute("data-theme", currentTheme);
+    }
+    
+    // 设置状态
+    setIsDarkMode(currentTheme === "dracula");
   }, []);
 
   const handleThemeChange = () => {
     const newTheme = isDarkMode ? "winter" : "dracula";
+    
+    // 使用 theme-change 库切换主题
+    const themeElements = document.querySelectorAll("[data-set-theme]");
+    themeElements.forEach(el => {
+      if (el.getAttribute("data-set-theme") === newTheme) {
+        (el as HTMLButtonElement).click();
+      }
+    });
+    
+    // 手动设置主题，确保立即生效
     localStorage.setItem("theme", newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
     setIsDarkMode(!isDarkMode);

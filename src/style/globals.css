@@ -1,6 +1,16 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* 确保暗模式样式正确应用 */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 确保 dark: 类正确工作 */
+html.dark {
+  color-scheme: dark;
+}
+
 
 [data-theme='winter'] {
     --color-base-100: oklch(100% 0 0);

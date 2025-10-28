@@ -18,8 +18,8 @@ const LeftNavItem: FC<IProps> = (props) => {
 			href={href}
 			className={`flex flex-1 w-full items-center gap-4 px-4 py-3 text-xl rounded-lg text-base-content transition-all ${
 				pathname === href
-					? 'font-semibold bg-neutral text-neutral-content hover:bg-neutral hover:text-neutral-content'
-					: 'hover:bg-gray-100 dark:hover:bg-neutral/30'
+					? 'font-semibold bg-neutral text-neutral-content hover:bg-neutral/80 hover:text-neutral-content'
+					: 'hover:bg-gray-100 dark:hover:bg-gray-700'
 			}`}
 		>
 			<span className={'w-5 h-5'}>{icon}</span>
