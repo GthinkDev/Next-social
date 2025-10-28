@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint --fix",
+    "lint:check": "eslint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:imports": "prettier --write . --plugin=prettier-plugin-organize-imports",
+    "clean:imports": "node scripts/clean-imports.js",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.34.0",
@@ -23,10 +29,13 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@typescript-eslint/parser": "^7.0.0",
     "babel-plugin-react-compiler": "1.0.0",
     "depcheck": "^1.4.7",
     "eslint": "^9",
     "eslint-config-next": "16.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "prettier": "^3.6.2",
     "prettier-plugin-organize-imports": "^4.3.0",
     "tailwindcss": "^4.1.16",
     "typescript": "^5"
