@@ -82,6 +82,56 @@ const siteConfig = {
       icon: <CalendarCog size={20} strokeWidth={2} />,
     },
   ],
+  imageListConfig: [
+    {
+      title: '图片1',
+      src: 'https://images.unsplash.com/photo-1761578571404-f7e0fa2ff634?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=500',
+      width: 300,
+      height: 200,
+    },
+    {
+      title: '图片1',
+      src: 'https://images.unsplash.com/photo-1761405378558-3688471ba000?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=500',
+      width: 300,
+      height: 200,
+    },
+    {
+      title: '图片1',
+      src: 'https://images.unsplash.com/photo-1761604297459-c2a4a0b18b0b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500',
+      width: 300,
+      height: 200,
+    },
+    {
+      title: '图片1',
+      src: 'https://images.unsplash.com/photo-1761429944585-6b0e475499cb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500',
+      width: 300,
+      height: 200,
+    },
+    {
+      title: '图片1',
+      src: 'https://images.unsplash.com/photo-1760994031808-08d199c9b68f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500',
+      width: 300,
+      height: 200,
+    },
+    {
+      title: '图片1',
+      src: 'https://plus.unsplash.com/premium_photo-1761582026248-cc158562a263?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500',
+      width: 300,
+      height: 200,
+    },
+    {
+      title: '图片1',
+      src: 'https://images.unsplash.com/photo-1761550653675-faeb615fa261?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500',
+      width: 300,
+      height: 200,
+    },
+    {
+      title: '图片1',
+      src: 'https://images.unsplash.com/photo-1761072195994-82158b4fc27d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0M3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=500',
+      width: 300,
+      height: 200,
+    },
+  ],
 }
 
 export default siteConfig

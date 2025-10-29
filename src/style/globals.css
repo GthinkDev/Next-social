@@ -82,11 +82,11 @@ body {
 }
 
 .mediaPadding {
-  @apply w-full   px-4 md:px-8 lg:px-16 xl:px-32;
+  @apply w-full   px-3 md:px-8 lg:px-16 xl:px-32;
 }
 
 .card {
-  @apply bg-base-100 rounded-lg p-4 border border-gray-400/20;
+  @apply bg-base-100 rounded-xl p-4 border border-gray-400/10;
   @apply dark:border-gray-400/10;
 }
 

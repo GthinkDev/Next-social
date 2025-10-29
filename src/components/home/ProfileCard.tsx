@@ -18,13 +18,13 @@ const ProfileCard: FC = () => {
           alt="User Avatar"
           width={48}
           height={48}
-          className="rounded-full object-cover w-16 h-16 -mt-9 border-2 border-white/50  "
+          className="rounded-full object-cover w-12 h-12 -mt-6 border-2 border-white/50  "
         />
         <p className="font-bold text-xl">DeMaster</p>
         <div className="pb-2">
           <p className="text-base-content text-xs">Ui设计师 | 开发菜鸟</p>
         </div>
-        <button className="btn btn-primary btn-sm  h-10 ">我的头像</button>
+        <button className="btn btn-primary btn-sm w-1/2 h-10 ">我的头像</button>
       </div>
     </section>
   )

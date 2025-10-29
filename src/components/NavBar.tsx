@@ -22,7 +22,7 @@ const NavBar: FC = () => {
   return (
     <section className={'flex justify-between items-center w-full  gap-4 '}>
       <div
-        className={'font-black w-32 text-xl text-primary md:hidden lg:block '}
+        className={'font-black w-1/6 text-xl text-primary md:hidden lg:block '}
       >
         <span>
           <Link href={'/'}>DeMaster</Link>
@@ -45,7 +45,7 @@ const NavBar: FC = () => {
             <span>{link.title}</span>
           </Link>
         ))}
-        <label className="input text-base   input-sm hidden xl:flex w-1/3 bg-base-200">
+        <label className="input text-base   input-sm hidden xl:flex w-1/3 bg-base-300 border-none">
           <svg
             className="h-[1em] opacity-50"
             xmlns="http://www.w3.org/2000/svg"
