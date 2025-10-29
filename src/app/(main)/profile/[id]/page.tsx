@@ -15,7 +15,7 @@ const Page: FC = () => {
       className={' w-full pt-4 flex gap-2 justify-start items-start z-20'}
     >
       <div className={'hidden xl:block w-1/5 '}>
-        <LeftMenu type={''} />
+        <LeftMenu type={'home'} />
       </div>
       <div className={'w-full lg:w-[70%] xl:w-1/2 flex flex-col gap-2'}>
         <div className={'flex flex-col  gap-6 items-center card '}>
